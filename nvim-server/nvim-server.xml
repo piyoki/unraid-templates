@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>nvim-server</Name>
-  <Repository>https://hub.docker.com/r/hikariai/nvim-server</Repository>
+  <Repository>hikariai/nvim-server</Repository>
   <Registry>https://hub.docker.com/r/hikariai/nvim-server</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -13,11 +13,11 @@
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:6080]</WebUI>
   <TemplateURL/>
-  <Icon>https://camo.githubusercontent.com/67d8d32acb9aa6ef50a036e831334c538cbdb5756d3d42b5bf37821c394c8c7/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3231313236322f323233373936332f32336562643565342d396264332d313165332d393136342d3262386165646165393032302e706e67</Icon>
+  <Icon>https://camo.githubusercontent.com/67d8d32acb9aa6ef50a036e831334c538cbdb5756d3d42b5bf378212c394c8c7/68747470733a2f2662e636c6f75642e6769746875622e636f6d2f6173736574732f3231313236322f323233373936332f32336562643565342d396264332d313165332d393136342d3262386165646165393032302e706e67</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1612674499</DateInstalled>
+  <DateInstalled>1612675340</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>A containerized IDE-like text editor that runs on a web server. This tool is for running NeoVim remotely and continuing the development process at &#x1F680; speed.</Description>
@@ -50,26 +50,27 @@
   </Data>
   <Environment>
     <Variable>
-      <Value/>
+      <Value>kev</Value>
       <Name>USER</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>439911</Value>
       <Name>SECRET</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>Asia/Shanghai</Value>
       <Name>TZ</Name>
       <Mode/>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="USER" Target="USER" Default="guest" Mode="" Description="User for login, default is set to guest" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="SECRET" Target="SECRET" Default="password" Mode="" Description="Password for login, default is set to password" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="TZ" Target="TZ" Default="Asia/Shanghai" Mode="" Description="Default TZ is set to Asia/Shanghai" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="USER" Target="USER" Default="guest" Mode="" Description="User for login, default is set to guest" Type="Variable" Display="always" Required="true" Mask="false">kev</Config>
+  <Config Name="SECRET" Target="SECRET" Default="password" Mode="" Description="Password for login, default is set to password" Type="Variable" Display="always" Required="true" Mask="false">439911</Config>
+  <Config Name="TZ" Target="TZ" Default="Asia/Shanghai" Mode="" Description="Default TZ is set to Asia/Shanghai" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
   <Config Name="WEB UI" Target="3000" Default="6080" Mode="tcp" Description="Port for accessing the Web UI" Type="Port" Display="always" Required="false" Mask="false">6080</Config>
-  <Config Name="CONFIG" Target="/config" Default="/mnt/user/appdata/nvim-server" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="WORK_DIR" Target="/workspace" Default="/mnt/user/appdata/nvim-server-workspace" Mode="rw" Description="Working directory path: /workspace" Type="Path" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Markdown Preview" Target="8090" Default="8090" Mode="tcp" Description="Port for the Instant Markdown Preview Server" Type="Port" Display="advanced" Required="false" Mask="false">8090</Config>2
+  <Config Name="CONFIG" Target="/config" Default="/mnt/user/appdata/nvim-server" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="WORKSPACE" Target="/workspace" Default="/mnt/user/appdata/nvim-server-workspace" Mode="rw" Description="Container Path: /workspace" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Markdown Preview" Target="8090" Default="8090" Mode="tcp" Description="Port for the Instant Markdown Preview Server" Type="Port" Display="advanced" Required="false" Mask="false">8090</Config>
+</Container>f
