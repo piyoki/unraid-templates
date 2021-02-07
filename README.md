@@ -6,3 +6,6 @@ This repository holds Docker templates for Docker images to be used in unRAID. C
 
 Waiting for the approval
 
+## License
+
+[MIT (C) Kevin Yu](https://github.com/yqlbu/unraid-templates/blob/master/LICENSE)
