@@ -2,7 +2,7 @@
 
 This repository holds Docker templates for Docker images to be used in unRAID. Currently only holds a template for `NeoVim Server`, a containerized IDE-like text editor that runs on a web server written in `TypeScript` and `VimScript`.
 
-`Neovim Server` is a containerized IDE-like text editor that runs on a web server. This tool is for running NeoVim remotely and continuing the development process at 🚀 speed.
+`NeoVim Server` is a containerized IDE-like text editor that runs on a web server. This tool is for running NeoVim remotely and continuing the development process at 🚀 speed.
 
 <img src="https://github.com/yqlbu/unraid-templates/blob/main/nvim-server/icon.png?raw=true" height="200px">
 
@@ -16,7 +16,7 @@ Github: https://github.com/yqlbu/neovim-server
 
 ### Install from CA
 
-Go to the unRAID `Application Store` and search `neovim`
+Go to the unRAID `Application Store` and search `nvim server`
 
 ### Install from templates
 
