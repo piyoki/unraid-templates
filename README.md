@@ -20,7 +20,7 @@ Go to the unRAID `Application Store` and search `nvim server`
 
 ### Install from templates
 
-Go to the unRAID `control panel` -> `extensions` -> `Docker`
+Go to the unRAID `control panel` -> `Docker`
 
 In the textarea for Template repositories add https://github.com/yqlbu/unraid-templates and press save
 You can now pick `Neovim Server` when adding a new container.
