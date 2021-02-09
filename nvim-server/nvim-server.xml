@@ -11,13 +11,13 @@
   <Project>https://github.com/yqlbu/neovim-server</Project>
   <Overview>A containerized IDE-like text editor that runs on a web server. This tool is for running NeoVim remotely and continuing the development process at &#x1F680; speed.</Overview>
   <Category>Productivity:</Category>
-  <WebUI>http://[IP]:[PORT:6080]/wetty</WebUI>
+  <WebUI>http://[IP]:[PORT:3000]/wetty</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/yqlbu/unraid-templates/main/nvim-server/nvim-server.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/yqlbu/unraid-templates/main/nvim-server/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1612912379</DateInstalled>
+  <DateInstalled>1612912779</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>A containerized IDE-like text editor that runs on a web server. This tool is for running NeoVim remotely and continuing the development process at &#x1F680; speed.</Description>
@@ -50,17 +50,17 @@
   </Data>
   <Environment>
     <Variable>
-      <Value/>
+      <Value>guest</Value>
       <Name>USER</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>password</Value>
       <Name>SECRET</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>Asia/Shanghai</Value>
       <Name>TZ</Name>
       <Mode/>
     </Variable>
@@ -76,9 +76,9 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="USER" Target="USER" Default="guest" Mode="" Description="User for login, default is set to guest" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="SECRET" Target="SECRET" Default="password" Mode="" Description="Password for login, default is set to password" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="TZ" Target="TZ" Default="Asia/Shanghai" Mode="" Description="Default TZ is set to Asia/Shanghai" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="USER" Target="USER" Default="guest" Mode="" Description="User for login, default is set to guest" Type="Variable" Display="always" Required="true" Mask="false">guest</Config>
+  <Config Name="SECRET" Target="SECRET" Default="password" Mode="" Description="Password for login, default is set to password" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="TZ" Target="TZ" Default="Asia/Shanghai" Mode="" Description="Default TZ is set to Asia/Shanghai" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
   <Config Name="WEB UI" Target="3000" Default="6080" Mode="tcp" Description="Port for accessing the Web UI" Type="Port" Display="always" Required="false" Mask="false">6080</Config>
   <Config Name="CONFIG" Target="/config" Default="/mnt/user/appdata/nvim-server" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/nvim-server</Config>
   <Config Name="WORKSPACE" Target="/workspace" Default="/mnt/user/appdata/nvim-server-workspace" Mode="rw" Description="Container Path: /workspace" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/nvim-server-workspace</Config>
