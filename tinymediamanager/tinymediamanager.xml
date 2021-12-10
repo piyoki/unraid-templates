@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TinyMediaManager</Name>
+  <Repository/>
+  <Registry>https://hub.docker.com/r/dzhuang/tinymediamanager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.tinymediamanager.org/</Project>
+  <Overview>TinyMediaManager is a media management tool written in Java/Swing. It is written to provide metadata for the Kodi Media Center (formerly known as XBMC), MediaPortal, and Plex media server. Due to the fact that it is written in Java, tinyMediaManager will run on Windows, Linux, and macOS (and possibly more OS).</Overview>
+  <Category>MediaApp:Video</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.ibb.co/BVkZTcd/tinymediamanager.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639142862</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tinymediaserver</Config>
+  <Config Name="Media" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Web UI" Target="5800" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5800</Config>
+</Container>
