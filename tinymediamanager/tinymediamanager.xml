@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>TinyMediaManager</Name>
-  <Repository/>
+  <Repository>dzhuang/tinymediamanager</Repository>
   <Registry>https://hub.docker.com/r/dzhuang/tinymediamanager</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1639142862</DateInstalled>
+  <DateInstalled>1639143623</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
